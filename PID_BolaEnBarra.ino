@@ -1,6 +1,7 @@
 /*
-    Sistema de control PID para bola en barra, con 3 botones para activar/desasctivar la componente proporcional, integral y derivativa, y un led de consigna alcanzada.
-    Autor: Javier Vargas. El Hormiguero 04/04/2018
+    Sistema de control PID para bola en barra, con 3 botones para activar/desasctivar la componente proporcional, integral 
+    y derivativa, y un led de consigna alcanzada.
+    Autor: Javier Vargas. El Hormiguero 09/04/2018
     Diseño basado en Estudio Roble http://roble.uno/control-pid-barra-y-bola-arduino/
     https://creativecommons.org/licenses/by-sa/4.0/
 */
@@ -18,14 +19,14 @@
 #define pinSensorDER A1 //**Inutilizado
 
 //CONFIGURACION
-#define muestreo 50 //milisegundos de muestreo
+#define muestreo 50 //Milisegundos de muestreo
 #define Kp 0.18 //Control proporcional
 #define Ki 0.05 //Control integral
 #define Kd 0.1 //Control dervativo
 #define OffsetSensorIZQ 24 //Offset del sensor (0 en el centro)
 #define OffsetSensorDER 0 //Offset del sensor (0 en el centro)
 #define OffsetServo 50 //Offset del servomotor
-#define RangoOK 25 //rango entorno al centro que el led ok enciende
+#define RangoOK 25 //Rango entorno al centro que el led ok enciende
 
 //Librerias y variables
 #include <Servo.h>
